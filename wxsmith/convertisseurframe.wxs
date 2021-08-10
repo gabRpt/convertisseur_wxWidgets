@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="convertisseurFrame">
+		<title>Celsius To Fahrenheit – v4</title>
+		<centered>1</centered>
+		<size>280,140</size>
+		<focused>1</focused>
+		<id_arg>0</id_arg>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxPanel" name="ID_PANEL1" variable="panel1" member="yes">
+			<pos>0,0</pos>
+			<size>360,60</size>
+			<focused>1</focused>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="txtStatic_titre" member="yes">
+				<label>Convertisseur de températures</label>
+				<pos>18,16</pos>
+				<size>240,19</size>
+				<font>
+					<size>13</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Arial</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="txtStatic_celsius" member="yes">
+				<label>Degrés Celsius</label>
+				<pos>40,48</pos>
+				<font>
+					<size>8</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="txtCtrl_celsius" member="yes">
+				<pos>40,64</pos>
+				<size>88,21</size>
+				<font>
+					<size>8</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+				<handler function="OntxtCtrl_celsiusText" entry="EVT_TEXT" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT4" variable="txtStatic_farenheit" member="yes">
+				<label>Degrés Farenheit</label>
+				<pos>144,48</pos>
+				<font>
+					<size>8</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON2" variable="button_effacer" member="yes">
+				<label>Effacer</label>
+				<pos>145,100</pos>
+				<font>
+					<size>8</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+				<handler function="Onbutton_effacerClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="txtStatic_converted" member="yes">
+				<label></label>
+				<pos>144,67</pos>
+				<font>
+					<size>8</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON1" variable="button_convertir" member="yes">
+				<label>Convertir</label>
+				<pos>40,100</pos>
+				<handler function="Onbutton_convertirClick1" entry="EVT_BUTTON" />
+			</object>
+		</object>
+	</object>
+</wxsmith>
